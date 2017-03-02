@@ -1,0 +1,19 @@
+2017-03-02 00:31:55.588082 TouchbarRadarSample[60747:1027467] [General] -[__NSCFConstantString substringWithRange:]: Range {0, 5} out of bounds; string length 0
+2017-03-02 00:31:55.590783 TouchbarRadarSample[60747:1027467] [General] (
+	0   CoreFoundation                      0x00007fff7cf65e7b __exceptionPreprocess + 171
+	1   libobjc.A.dylib                     0x00007fff91b4fcad objc_exception_throw + 48
+	2   CoreFoundation                      0x00007fff7cfe499d +[NSException raise:format:] + 205
+	3   CoreFoundation                      0x00007fff7ceb3c0b -[__NSCFString substringWithRange:] + 171
+	4   AppKit                              0x00007fff7b3698e8 -[NSTextView(NSTextView_TouchBar_API) insertCandidateString:replacementRange:] + 1171
+	5   AppKit                              0x00007fff7b0e6840 -[NSCandidateListViewController stopTrackingInSegmentType:index:] + 572
+	6   AppKit                              0x00007fff7b0e1a27 -[_NSCandidateBarFunctionRowButton touchesEndedWithEvent:] + 527
+	7   AppKit                              0x00007fff7afa6723 _NSSendTouchEventToViews + 1121
+	8   AppKit                              0x00007fff7afa8071 _NSSendDirectTouchesEvent + 2469
+	9   AppKit                              0x00007fff7af9bacd _NSSendEventToDequingObservers + 372
+	10  AppKit                              0x00007fff7b1875eb -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 869
+	11  AppKit                              0x00007fff7aa01f35 -[NSApplication run] + 926
+	12  AppKit                              0x00007fff7a9cc850 NSApplicationMain + 1237
+	13  TouchbarRadarSample                 0x00000001000056a4 main + 84
+	14  libdyld.dylib                       0x00007fff92433255 start + 1
+	15  ???                                 0x0000000000000003 0x0 + 3
+)
